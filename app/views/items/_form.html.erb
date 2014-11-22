@@ -37,13 +37,12 @@
               </select>
             
    
-   <div class="form-group">
-           <button id="item_image" name="item[image]" type="file"  class="btn btn-primary btn-lg btn-block" >
-      Choose File
-   </button>
 
-              
 
+ <div class="fileUpload btn btn-primary btn-lg btn-block">
+    <span>Choose File</span>
+    <input type="file" class="upload" />
+</div>
 
 <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Description" %>
   
@@ -58,20 +57,9 @@
 <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Qty" %>
 
 
-
-
-
-
-
-
-
-
-
-
-
   <div class="actions">
     <%= f.submit :class =>"btn btn-primary btn-lg btn-block" %>
   </div>
 
-   <%= f.file_field :image %>
+  
 <% end %>
