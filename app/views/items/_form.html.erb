@@ -11,6 +11,72 @@
     </div>
   <% end %>
 
+  <div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-1 col-md-offset-1">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">New Item</h3>
+              </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Name">
+                </div>
+
+<div class="form-group">
+       
+      
+           
+ <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option>Category</option>
+                <option value="01">1</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+              <%= f.file_field :image %>
+
+
+  <div class="form-group">
+                  <input type="email" style="margin-top: 10px;" name="email" id="email" class="form-control input-sm" placeholder="Description">
+                </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Price">
+                </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Sku">
+                </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Barcode">
+                </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Tags">
+                </div>
+
+<div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Qty">
+                </div>
+
+
+
+
+
+
+
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
