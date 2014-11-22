@@ -8,11 +8,54 @@
 </head>
 <body>
 
-    <div class="top_logo"><%= image_tag "logo.png" %></div>
-    <div class="main_button"><%= link_to 'New Product', new_item_path %></div>
-    <div class="main_button"><%= link_to 'Sell Product', sales_path %></div>
-    <div class="main_button"><%= link_to 'Manage Products', items_path %></div>
-    <div class="main_button"><%= link_to 'Settings', homes_path %></div>
+<!--Logo-->
+ <div class="top_logo"><%= image_tag "logo.png" %></div>
+
+<!--New Product Panel-->   
+    <div class="panel panel-default">
+
+   	 <div class="panel-body">
+
+   		 <div class="main_button"><%= link_to 'New Product', new_item_path %>
+
+   		 </div>
+   		 <div class="home-line-break"></div>
+      </div>
+	</div>
+
+<!--Sell Product Panel-->   
+<div class="panel panel-default">
+	
+  	 <div class="panel-body">
+    	<div class="main_button"><%= link_to 'Sell Product', sales_path %>
+    	</div>
+    	<div class="home-line-break"></div>
+
+	</div>
+</div>
+
+<!--Manage Product Panel-->   
+ <div class="panel panel-default">
+ 
+ 	 <div class="panel-body">
+   		 <div class="main_button"><%= link_to 'Manage Products', items_path %>
+   		 </div>
+	<div class="home-line-break"></div>
+     </div>
+</div>
+
+<!--Settings Panel-->   
+<div class="panel panel-default">
+
+  	<div class="panel-body">
+    	<div class="main_button"><%= link_to 'Settings', homes_path %>
+    	</div>
+    	<div class="home-line-break"></div>
+    </div>
+</div>
+
+
+
 
 <div class="container theme-showcase" role="main">
 <%= yield %>

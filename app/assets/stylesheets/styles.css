@@ -1,7 +1,7 @@
 body {
 
 }
-
+/*********** Form Stuff*******************/
 .theme-showcase {
 	margin-top: 15px;
 }
@@ -44,11 +44,41 @@ margin-top: 80px;
 	filter: alpha(opacity=0);
 }
 
+/*******************HOMES********************/
 .top_logo {
+	text-align: center;
 	width: 100%;
 	margin: auto auto;
+
 }
 
 .top_logo img {
 	margin: auto auto;
+}
+
+.panel-default{
+	margin:0;
+
+}
+
+.home-line-break{
+	background-color: #7fc342;
+	display:block;
+	width:100%;
+	height:1em;
+	margin: auto auto;
+}
+
+.panel-body{
+	height:145px;
+	margin:0;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+
+.main_button{
+ margin-top: 35px;
+ margin-bottom: 50px;
+
 }
