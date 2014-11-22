@@ -11,54 +11,59 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :store_id %><br>
+  <div class="field" style="display:none;">
     <%= f.select :store_id, Store.for_select %>
   </div>
 
+  <div class="container" id="new-item-form">
+        <div class="row centered-form" >
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-1 col-md-offset-1">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">New Item</h3>
+              </div>
+ <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Name" %>
+
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.select :category_id, Category.for_select, {}, {:class => "form-control col-sm-2", :id => "option"} %>
   </div>
+
+   
+   <div class="form-group">
+           <button id="item_image" name="item[image]" type="file"  class="btn btn-primary btn-lg btn-block" >
+      Choose File
+   </button>
+
+              
+
+
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Description" %>
   
-  <div class="field">
-    <%= f.label :category_id %><br>
-    <%= f.select :category_id, Category.for_select %>
-  </div>
-  
-  <%= f.file_field :image %>
-  
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Price" %>
 
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Sku" %>
 
-  <div class="field">
-    <%= f.label :sku %><br>
-    <%= f.text_field :sku %>
-  </div>
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Barcode" %>
 
-  <div class="field">
-    <%= f.label :barcode %><br>
-    <%= f.text_field :barcode %>
-  </div>
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Tags" %>
 
-  <div class="field">
-    <%= f.label :tags %><br>
-    <%= f.text_field :tags %>
-  </div>
+<%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Qty" %>
 
-  <div class="field">
-    <%= f.label :qty %><br>
-    <%= f.text_field :qty %>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class =>"btn btn-primary btn-lg btn-block" %>
   </div>
+
+   <%= f.file_field :image %>
 <% end %>

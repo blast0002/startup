@@ -10,3 +10,12 @@ body {
 	margin: auto auto;
 	max-width: 330px;
 }
+.form-control{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#new-item-form{
+margin-top: 100px;
+
+}

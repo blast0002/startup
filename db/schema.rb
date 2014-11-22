@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 20141122185951) do
   enable_extension "plpgsql"
 
   create_table "categories", force: true do |t|
-    t.string  "name"
-    t.integer "parent_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "items", force: true do |t|
