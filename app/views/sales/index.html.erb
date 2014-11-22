@@ -1,0 +1,16 @@
+<h1> sell an item </h1>
+
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+
+        <td><%= image_tag(item.image.url, :width => 100) %></td>
+
+      </tr>
+    <% end %>
+
+    <script type="text/javascript">
+  $('.active').removeClass();
+  $('#nav_sell_product').addClass('active');
+</script>
