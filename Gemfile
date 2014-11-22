@@ -7,6 +7,7 @@ gem 'rails', '4.1.4'
 gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'unicorn'
+gem 'carrierwave'
 # Use SCSS for stylesheets
 gem 'awesome_nested_set'
 gem 'sass-rails', '~> 4.0.3'
