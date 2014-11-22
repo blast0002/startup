@@ -43,3 +43,12 @@ margin-top: 100px;
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
+
+.top_logo {
+	width: 100%;
+	margin: auto auto;
+}
+
+.top_logo img {
+	margin: auto auto;
+}
