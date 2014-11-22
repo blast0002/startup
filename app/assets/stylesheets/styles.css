@@ -2,8 +2,13 @@ body {
 
 }
 
-input{
+.theme-showcase {
+	margin-top: 50px;
+}
 
+.form-signin {
+	margin: auto auto;
+	max-width: 330px;
 }
 .form-control{
 	margin-top: 10px;

@@ -1,0 +1,9 @@
+<h1>Stores list</h1>
+
+    <% @stores.each do |store| %>
+      <tr>
+        <td><%= link_to store.name, store %></td>        
+
+      </tr>
+    <% end %>
+

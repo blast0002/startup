@@ -19,21 +19,13 @@
           </button>
           <a class="navbar-brand" href="#">Simple Inventory</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li id="nav_home" class="active"><%= link_to 'Home', homes_path %></li>
-            <li id="nav_new_product"><%= link_to 'New Product', new_item_path %></li>
-            <li id="nav_sell_product"><%= link_to 'Sell Product', sales_path %></li>
-            <li id="nav_manage_product"><%= link_to 'Manage Products', items_path %></li>
-            <li id="nav_settings"><a href="#contact">Settings</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+
       </div>
     </nav>
 
+  <div class="container theme-showcase" role="main">
+    <%= yield  %>
+  </div>
 
-<div class="container theme-showcase" role="main">
-<%= yield %>
-</div>
 </body>
 </html>

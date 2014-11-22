@@ -14,4 +14,4 @@ categories = Category.create([{name: "Clothing > Activewear"},{name: "Clothing >
 	{name: "Clothing > Suits"},{name: "Clothing > Underwear"},
 	{name: "Apparel & Accessories > Shoes"},{name: "Apparel & Accessories > Jewelry	"}])
 
-	
+stores = Store.create(name: "Sample Clothing Store")
