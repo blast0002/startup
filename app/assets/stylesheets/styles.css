@@ -63,10 +63,16 @@ margin-top: 80px;
 
 .home-line-break{
 	background-color: #7fc342;
-	display:block;
+
 	width:100%;
-	height:1em;
-	margin: auto auto;
+	height:20px;
+	margin: 0 auto;
+}
+
+
+
+.panel a{
+color:black;
 }
 
 .panel-body{
@@ -77,8 +83,10 @@ margin-top: 80px;
 	color: black;
 }
 
+
 .main_button{
  margin-top: 35px;
  margin-bottom: 50px;
+
 
 }
