@@ -175,16 +175,10 @@ margin-top: 80px;
 }
 
 .done-button {
-	background-image: url('/assets/done-button.png');
-	background-size: 80px 80px;
-	background-color: #FFF;
-	border: none;
 	position: absolute;
 	right: 10px;
-	top: 400px;
 	width: 80px;
 	height: 80px;
-	z-index:10;
 }
 
 .search-bar{
