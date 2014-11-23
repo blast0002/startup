@@ -1,10 +1,20 @@
+<div class="top_header">
+  <div class="header_arrow"><%= link_to image_tag("back.png"), homes_path %></div>
+  <div class="header_text">Sell Products</div>
+  <div class="header_img"><%= image_tag "sell.png"%></div>
+  <div class="home-line-break"></div>
+</div>
+
+<div class="bottom_footer"></div>
 
 
 <%= render 'form' %>
 
-<%= link_to 'Back', items_path %>
 
 <script type="text/javascript">
-  $('.active').removeClass();
-  $('#nav_new_product').addClass('active');
+  setTimeout(function() {
+    hideNav();
+    $('.cont_container').hide();
+    $('#cont1').show();
+  },100);
 </script>

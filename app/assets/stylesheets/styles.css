@@ -4,6 +4,7 @@ body {
 /*********** Form Stuff*******************/
 .theme-showcase {
 	margin-top: 15px;
+	position: relative;
 }
 
 .form-signin {
@@ -147,5 +148,17 @@ margin-top: 80px;
 .sell_item img {
 	max-height: 80px;
 	max-width: 80px;
+}
+
+.bottom_footer {
+	position: absolute;
+	bottom:0px;
+
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	margin: auto auto;
+	overflow:hidden;
+	background-color: red;
 }
 
