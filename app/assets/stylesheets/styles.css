@@ -159,6 +159,19 @@ margin-top: 80px;
 	height: 80px;
 	margin: auto auto;
 	overflow:hidden;
-	background-color: red;
 }
 
+.prev_button {
+	position: absolute;
+	left: 10px;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+}
+.next_button {
+	position: absolute;
+	right: 10px;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+}
