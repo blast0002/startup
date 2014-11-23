@@ -70,8 +70,8 @@
   </center>
 
     <center>
-      <%= f.number_field :barcode, :class =>"form-control input-sm", :placeholder=>"Barcode" %><div class='generate' onclick="generateSku()"></div>
-      <%= f.text_field :sku, :class =>"form-control input-sm", :placeholder=>"SKU number" %><div class='generate' onclick="generateSku()"></div>
+      <%= f.number_field :barcode, :class =>"form-control input-sm", :placeholder=>"Barcode" %><div class='generate' onclick="generateBarcode()">+</div>
+      <%= f.text_field :sku, :class =>"form-control input-sm", :placeholder=>"SKU number" %><div class='generate' onclick="generateSKU()">+</div>
     </center>
       </div>
 
@@ -87,7 +87,7 @@
   </center>
 
     <center>
-      <%= f.number_field :price, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Price - $" %>
+      <%= f.number_field :price, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Price - $" %><br />
       <%= f.number_field :qty, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Quantity" %>
       <%#= f.text_field :tags, :class =>"form-control input-sm", :placeholder=>"Tag, Anothertag.." %>
     </center>
