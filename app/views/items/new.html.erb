@@ -48,6 +48,11 @@
     	$('#new_item').submit();
       $('.done-button').hide();
     });
+
+    $('#item_barcode').bind('keydown',function() {
+        console.log('hit')
+      $('#barcode_display').html($('#item_barcode').val());
+    });
   },100);
 
 
@@ -59,6 +64,7 @@
   function generateBarcode() {
     var barcode = parseInt((Math.random() * 50000000000000)) + 10000000000000;
     $('#item_barcode').attr('value', barcode);
+    $('#barcode_display').html(barcode);
   }
 
 </script>

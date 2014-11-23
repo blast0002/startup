@@ -1,98 +1,71 @@
 <!--HOMEPAGE DIVS-->
 <%= form_for(@item) do |f| %>
-  <% if @item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
-
-      <ul>
-      <% @item.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+  <center>
+  
   <div class="field" style="display:none;">
     <%= f.select :store_id, Store.for_select %>
   </div>
 
 
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+  <div class="cont_container" id="cont1">
+    
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
 
-<div class="cont_container" id="cont1">
-  <center>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-  </center>
-
-    <center>
-
-      <br />
+    <br />
       
-      <%= image_tag "image_placeholder.png", :style => "margin-bottom: 20px;", :width => 200, :height => 200 %>
-      <br />
+    <%= image_tag "image_placeholder.png", :style => "margin-bottom: 20px;", :width => 200, :height => 200 %>
+    
+    <br />
       
-      <%= f.file_field :image%>
+    <%= f.file_field :image%>
 
   </div>
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
   <div class="cont_container" id="cont2">
-  <center>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-  </center>
 
-    <center>
-      <%= f.select :category_id, Category.for_select, {}, {:class => "form-control col-sm-2", :id => "form2"} %>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
 
-      <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Name of product." %>
-      <%= f.text_area :description, :class =>"form-control input-sm txt-area", :id => "txt-area", :placeholder=>"Write a description of your item here." %>
-    </center>
-      </div>
+    <%= f.select :category_id, Category.for_select, {}, {:class => "form-control col-sm-2", :id => "form2"} %>
+
+    <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Name of product." %>
+    <%= f.text_area :description, :class =>"form-control input-sm txt-area", :id => "txt-area", :placeholder=>"Write a description of your item here." %>
 
   </div>
 
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
+  <div class="cont_container" id="cont3">
 
-<div class="cont_container" id="cont3">
-  <center>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
-  </center>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "gray-circle.png", :width => "30", :height => "30"%>
 
-    <center>
-      <%= f.number_field :barcode, :class =>"form-control input-sm", :placeholder=>"Barcode" %><div class='generate' onclick="generateBarcode()">+</div>
-      <%= f.text_field :sku, :class =>"form-control input-sm", :placeholder=>"SKU number" %><div class='generate' onclick="generateSKU()">+</div>
-    </center>
-      </div>
+    <div id="barcode_display"></div>
+    <%= f.number_field :barcode, :class =>"form-control input-sm", :placeholder=>"Barcode" %><div class='generate' onclick="generateBarcode()">+</div>
+    
+    <%= f.text_field :sku, :class =>"form-control input-sm", :placeholder=>"SKU number" %><div class='generate' onclick="generateSKU()">+</div>
 
   </div>
 
-  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-<div class="cont_container" id="cont4">
-  <center>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-<%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
-  </center>
+  <div class="cont_container" id="cont4">
 
-    <center>
-      <%= f.number_field :price, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Price - $" %><br />
-      <%= f.number_field :qty, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Quantity" %>
-      <%#= f.text_field :tags, :class =>"form-control input-sm", :placeholder=>"Tag, Anothertag.." %>
-    </center>
-      </div>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+    <%= image_tag "blue-circle.png", :width => "30", :height => "30"%>
+
+    <br />
+    <%= f.number_field :price, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Price - $" %><br />
+    <%= f.number_field :qty, :step => "any", :class =>"form-control input-sm num-input", :placeholder=>"Quantity" %>
 
   </div>
-  
+
+</center>  
 <% end %>

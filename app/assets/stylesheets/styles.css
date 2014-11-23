@@ -1,6 +1,18 @@
 body {
 
 }
+@font-face
+{
+font-family: Barcode;
+src: url('http://azalea.com/web-fonts/Code39Azalea.eot') format('embedded-opentype'), /* IE9 Compat Modes */
+   url('http://azalea.com/web-fonts/Code39Azalea.woff') format('woff'), /* Modern Browsers */
+   url('http://azalea.com/web-fonts/Code39Azalea.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('http://azalea.com/web-fonts/Code39Azalea.svg#Code39Azalea') format('svg'); /* Legacy iOS */
+font-weight: normal;
+font-style: normal;
+}
+
+
 /*********** Form Stuff*******************/
 .theme-showcase {
 	margin-top: 15px;
@@ -233,4 +245,10 @@ margin: 10px 0 0 10px;
 font-size: 36px;
 color: #000;
 text-align: center;
+}
+
+#barcode_display {
+	margin-top: 5px;
+	font-family: 'Barcode';
+	font-size: 60px;
 }
