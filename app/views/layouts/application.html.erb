@@ -58,5 +58,18 @@
 <div class="container theme-showcase" role="main">
 <%= yield %>
 </div>
+
+  <script type='text/javascript'>
+   function showNav() {
+    $('.main_button').animate({height: 100, margin: 10}, 1000);
+    $('.top_logo').animate({height: 82}, 1000);
+   }
+
+   function hideNav() {
+    $('.main_button').animate({height: 0, margin: 0}, 1000);
+    $('.top_logo').animate({height: 0}, 1000);
+   }
+  </script>
+
 </body>
 </html>
