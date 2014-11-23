@@ -232,10 +232,12 @@ width: 100%;
 	background-color: rgba(0,0,0,0.1);
 }
 
+/*
 .store_item img {
-	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	-webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+*/
 
 .generate {
 display: inline-block;

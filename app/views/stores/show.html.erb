@@ -1,10 +1,13 @@
 
     <% @items.each do |item| %>
+
+
     	<div class="store_item">
     		<div> <%= item.name %> - $ <%= item.price %> </div> <br />
 			
 			<div> <%= image_tag(item.image.url, :width => 150) %> </div>
 			<div> <%= item.description %> </div><br />
     	</div>
+
 
     <% end %>
