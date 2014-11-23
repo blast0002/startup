@@ -223,15 +223,32 @@ width: 100%;
 	width: 150px;
 }
 
+
 .store_item {
 	text-align: center;
 	float: left;
 	margin: 10px;
 	width: 200px;
 	height: 200px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	border: 1px solid grey;
+	position: relative;
+
+
 }
 
+.item-description{
+	margin-top: 0px;
+}
+
+.item-name{
+
+	position:absolute;
+	display: block;
+	color: black;
+	bottom: 5px;
+	left: 5px;
+}
 /*
 .store_item img {
 	-webkit-transform: rotate(45deg);
