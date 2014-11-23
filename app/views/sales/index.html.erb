@@ -1,4 +1,9 @@
-<h1> sell an item </h1>
+<div class="top_header">
+  <div class="header_arrow"><%= link_to "<", homes_path %></div>
+  <div class="header_text">Sell Products</div>
+  <div class="header_img"><%= image_tag "sell.png"%></div>
+  <div class="home-line-break"></div>
+</div>
 
     <% @items.each do |item| %>
       <tr>
@@ -10,7 +15,9 @@
       </tr>
     <% end %>
 
-    <script type="text/javascript">
-  $('.active').removeClass();
-  $('#nav_sell_product').addClass('active');
+
+<script type="text/javascript">
+  setTimeout(function() {
+    hideNav();
+  },100);
 </script>
