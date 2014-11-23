@@ -16,5 +16,15 @@
     hideNav();
     $('.cont_container').hide();
     $('#cont1').show();
+  	var slide = 1;
+
+    $('.bottom_footer').bind('click', function() {
+    	$('.cont_container').hide();
+    	slide++;
+    	$('#cont'+slide).show();
+    		
+    });
   },100);
+
+
 </script>
