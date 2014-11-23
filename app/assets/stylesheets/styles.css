@@ -251,8 +251,6 @@ width: 100%;
 }
 
 .store_item img {
-	-webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 .generate {
