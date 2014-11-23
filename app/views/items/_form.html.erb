@@ -47,10 +47,9 @@
 
     <center>
       <%= f.select :category_id, Category.for_select, {}, {:class => "form-control col-sm-2", :id => "form2"} %>
-      <h4>Name</h4>
-      <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Name of product.." %>
-      <h4>Description</h4>
-      <%= f.text_field :description, :class =>"form-control input-sm", :placeholder=>"Write a description of your item here.." %>
+
+      <%= f.text_field :name, :class =>"form-control input-sm", :placeholder=>"Name of product." %>
+      <%= f.text_area :description, :class =>"form-control input-sm txt-area", :id => "txt-area", :placeholder=>"Write a description of your item here." %>
     </center>
       </div>
 
@@ -68,9 +67,7 @@
   </center>
 
     <center>
-      <h4>Barcode</h4>
       <%= f.text_field :barcode, :class =>"form-control input-sm", :placeholder=>"Barcode" %>
-      <h4>SKU</h4>
       <%= f.text_field :sku, :class =>"form-control input-sm", :placeholder=>"SKU number" %>
     </center>
       </div>
@@ -87,12 +84,9 @@
   </center>
 
     <center>
-      <h4>Price</h4>
-      <%= f.text_field :price, :class =>"form-control input-sm", :placeholder=>"$" %>
-      <h4>Quantity</h4>
-      <%= f.text_field :qty, :class =>"form-control input-sm", :placeholder=>"Quantity" %>
-      <h4>Tags</h4>
-      <%= f.text_field :tags, :class =>"form-control input-sm", :placeholder=>"Tag, Anothertag.." %>
+      <%= f.number_field :price, :class =>"form-control input-sm num-input", :placeholder=>"Price - $" %>
+      <%= f.number_field :qty, :class =>"form-control input-sm num-input", :placeholder=>"Quantity" %>
+      <%#= f.text_field :tags, :class =>"form-control input-sm", :placeholder=>"Tag, Anothertag.." %>
     </center>
       </div>
 
