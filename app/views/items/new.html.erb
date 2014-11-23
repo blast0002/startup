@@ -5,7 +5,7 @@
   <div class="home-line-break"></div>
 </div>
 
-<div class="bottom_footer"></div>
+<div class="bottom_footer"><div class="prev_button"></div><div class="next_button"></div></div>
 
 
 <%= render 'form' %>
@@ -17,12 +17,20 @@
     $('.cont_container').hide();
     $('#cont1').show();
   	var slide = 1;
+  	$('.prev_button').hide();
 
-    $('.bottom_footer').bind('click', function() {
+    $('.prev_button').bind('click', function() {
+    	$('.cont_container').hide();
+    	slide--;
+    	$('#cont'+slide).show();
+    	if(slide <=1) $('.prev_button').hide();
+    });
+
+    $('.next_button').bind('click', function() {
     	$('.cont_container').hide();
     	slide++;
     	$('#cont'+slide).show();
-    		
+    	$('.prev_button').show();
     });
   },100);
 
