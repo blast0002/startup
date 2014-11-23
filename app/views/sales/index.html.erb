@@ -1,9 +1,20 @@
+
+
 <div class="top_header">
   <div class="header_arrow"><%= link_to image_tag("back.png"), homes_path %></div>
   <div class="header_text">Sell Products</div>
   <div class="header_img"><%= image_tag "sell.png"%></div>
   <div class="home-line-break"></div>
 </div>
+<center>
+  <h1>CHOOSE PRODUCT</h1>
+
+  <div style="margin-bottom: 20px;">
+    <button class="btn btn-default">SCAN</button>
+
+    <%= text_field_tag 'search', nil, placeholder: 'SEARCH' %>
+  </div>
+</center>
 
     <% @items.each do |item| %>
       <tr>
