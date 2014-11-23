@@ -249,12 +249,11 @@ width: 100%;
 	bottom: 5px;
 	left: 5px;
 }
-/*
+
 .store_item img {
 	-webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-*/
 
 .generate {
 display: inline-block;
