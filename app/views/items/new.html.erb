@@ -5,11 +5,13 @@
   <div class="home-line-break"></div>
 </div>
 
-<div class="bottom_footer"><div class="prev_button"></div><div class="next_button"></div></div>
-
 
 <%= render 'form' %>
 
+<div class="bottom_footer">
+	<div class="prev_button"><%= image_tag "prev-button.png", :width => 80, :height => 80 %></div>
+	<div class="next_button"><%= image_tag "next-button.png", :width => 80, :height => 80  %></div>
+</div>
 
 <script type="text/javascript">
   setTimeout(function() {
@@ -18,12 +20,15 @@
     $('#cont1').show();
   	var slide = 1;
   	$('.prev_button').hide();
+  	$('.done-button').hide();
 
     $('.prev_button').bind('click', function() {
     	$('.cont_container').hide();
     	slide--;
     	$('#cont'+slide).show();
     	if(slide <=1) $('.prev_button').hide();
+    	$('.done-button').hide();
+    	$('.next_button').show();
     });
 
     $('.next_button').bind('click', function() {
@@ -31,6 +36,10 @@
     	slide++;
     	$('#cont'+slide).show();
     	$('.prev_button').show();
+    	if(slide>=4) {
+    		$('.next_button').hide();
+    		$('.done-button').show();
+    	}
     });
   },100);
 

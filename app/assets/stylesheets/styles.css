@@ -164,14 +164,24 @@ margin-top: 80px;
 .prev_button {
 	position: absolute;
 	left: 10px;
-	width: 60px;
-	height: 60px;
-	background-color: red;
+	width: 80px;
+	height: 80px;
 }
 .next_button {
 	position: absolute;
 	right: 10px;
-	width: 60px;
-	height: 60px;
-	background-color: red;
+	width: 80px;
+	height: 80px;
+}
+
+.done-button {
+	background-image: url('/assets/done-button.png');
+	background-size: 80px 80px;
+	background-color: #FFF;
+	border: none;
+	position: absolute;
+	right: 10px;
+	top: 450px;
+	width: 80px;
+	height: 80px;
 }
