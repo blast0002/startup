@@ -18,7 +18,7 @@
     <% @items.each do |item| %>
 
       <div class="sell_item">
-        <%= item.name %>
+        <strong><%= item.name %></strong><br/>
         <%= link_to image_tag(item.image.url, :width => 80), item_path(item) %><br />
         $<%= item.price %> - <%= item.qty %>
       </div>

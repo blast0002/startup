@@ -46,16 +46,19 @@
 
     $('.done-button').bind('click', function() {
     	$('#new_item').submit();
+      $('.done-button').hide();
     });
   },100);
 
 
   function generateSKU() {
-
+    var sku = "a" + (parseInt((Math.random() * 50000000)) + 10000000) + "ss";
+    $('#item_sku').attr('value', barcode);
   }
 
   function generateBarcode() {
-
+    var barcode = parseInt((Math.random() * 50000000000000)) + 10000000000000;
+    $('#item_barcode').attr('value', barcode);
   }
 
 </script>
