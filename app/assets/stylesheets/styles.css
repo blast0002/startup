@@ -208,3 +208,12 @@ width: 100%;
 .num-input {
 	width: 150px;
 }
+
+.store_item {
+	text-align: center;
+	float: left;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0,0,0,0.1);
+}
