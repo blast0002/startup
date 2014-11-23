@@ -13,8 +13,8 @@
 
  <div class="title-text">Click to Edit</div>
     <% @items.each do |item| %>
+    
       <div class="sell_item">
-
         <%= item.name %>
         <%= link_to image_tag(item.image.url, :width => 80), item_path(item) %><br />
         $<%= item.price %> - <%= item.qty %>

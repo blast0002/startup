@@ -186,8 +186,15 @@ width: 100%;
 }
 
 .sell_item{
-	margin-left: 50px;
+	margin-top: 10px;
+	margin-left: 10%;
 }
+
+.choose_product{
+	margin-left: 10%;
+}
+
+
 
 .title-text{
 	margin-top: 0px;

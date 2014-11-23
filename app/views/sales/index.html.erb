@@ -1,4 +1,4 @@
-
+<!--SELL PRODUCTS-->
 
 <div class="top_header">
   <div class="header_arrow"><%= link_to image_tag("back.png"), homes_path %></div>
@@ -15,8 +15,8 @@
     <%= text_field_tag 'search', nil, placeholder: 'SEARCH' %>
   </div>
 </center>
-
     <% @items.each do |item| %>
+    <!--
       <tr>
         <td><%= item.name %></td>
         <td><%= item.description %></td>
@@ -24,6 +24,13 @@
         <td><%= image_tag(item.image.url, :width => 100) %></td>
 
       </tr>
+-->       
+         <div class="choose_product">
+        <div class="choose-product-name"><%= item.name %></div>
+        <%= image_tag(item.image.url, :width => 100) %>
+        <br /><%= item.description %>
+       
+      </div>
     <% end %>
 
 <script type="text/javascript">
