@@ -60,9 +60,14 @@
 
 <!--ANIMATIONS-->
   <script type='text/javascript'>
+    function quickHideNav() {
+      $('.main_button').hide().css({height: 0});
+     $('.top_logo').hide().css({height: 0});
+
+    }
    function showNav() {
-    $('.main_button').animate({height: 100, margin: 10}, 1000);
-    $('.top_logo').animate({height: 82}, 1000);
+    $('.main_button').show().animate({height: 100, margin: '10px auto'}, 1000);
+    $('.top_logo').show().animate({height: 82}, 1000);
    }
 
    function hideNav() {
